@@ -3,6 +3,7 @@
     require_once __DIR__."/../src/PingPongGenerator.php";
 
     $app = new Silex\Application();
+    $app['debug']= true;
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__.'/../views'));
 
@@ -12,8 +13,8 @@
 
     $app->get("/view_pingpongtest", function() use($app) {
         $pingpongtest = new PingPongGenerator;
-        $new_user_input = $pingpongtest->makePingPong($_GET['user_input']);
-        return $app['twig']->render('view_pingpongtest.twig', array('result' => $new_user_input));
+        $new_user_input = $pingpongtest->makePingPong($_GET['input']);
+        return $app['twig']->render('view_pingpongtest.twig', array('results' => $new_user_input));
     });
 
     return $app;
