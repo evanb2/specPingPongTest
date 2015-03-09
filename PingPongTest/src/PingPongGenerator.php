@@ -6,7 +6,9 @@
             $output = array();
             $count = 1;
             while ($count <= $input){
-                if ($count % 3 == 0){
+                if ($count % 15 == 0) {
+                    array_push($output, 'pingpong');
+                } elseif ($count % 3 == 0) {
                     array_push($output, 'ping');
                 } elseif ($count % 5 == 0) {
                     array_push($output, 'pong');
