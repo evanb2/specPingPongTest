@@ -47,5 +47,20 @@
             $output = array(1, 2, "ping");
             $this->assertEquals($output, $result);
         }
+
+        function test_makePingPong_five()
+        //if input is divisible by 5 return pong
+        {
+            //Arrange
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 5;
+
+            //Act
+            $result = $test_PingPongGenerator->makePingPong($input);
+
+            //Assert
+            $output = array(1, 2, "ping", 4, "pong");
+            $this->assertEquals($output, $result);
+        }
     }
 ?>
