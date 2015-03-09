@@ -4,7 +4,12 @@
         function makePingPong($input)
         {
             $output = array();
-            array_push($output, $input);
+            $count = 1;
+            while ($count <= $input){
+                array_push($output, $count);
+                ++$count;
+            }
+
             return $output;
         }
     }
