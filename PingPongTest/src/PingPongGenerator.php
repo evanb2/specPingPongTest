@@ -1,9 +1,11 @@
 <?php
     class PingPongGenerator
     {
-        function makePingPong($user_input)
+        function makePingPong($input)
         {
-
+            $output = array();
+            array_push($output, $input);
+            return $output;
         }
     }
 ?>

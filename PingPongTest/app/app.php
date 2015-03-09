@@ -13,3 +13,4 @@
     $app->get("/results", function() use($app) {
         $
     });
+?>
