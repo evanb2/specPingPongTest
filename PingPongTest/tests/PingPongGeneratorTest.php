@@ -32,5 +32,20 @@
             $output = array(1, 2);
             $this->assertEquals($output, $result);
         }
+
+        function test_makePingPong_three()
+        //if input is divisible by 3 return ping
+        {
+            //Arrange
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 3;
+
+            //Act
+            $result = $test_PingPongGenerator->makePingPong($input);
+
+            //Assert
+            $output = array(1, 2, "ping");
+            $this->assertEquals($output, $result);
+        }
     }
 ?>
