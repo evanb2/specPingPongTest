@@ -1,4 +1,4 @@
-# Name: Evan Butler Kelly de Vries
+# Name: Evan Butler & Kelly de Vries
 # Date: March 9, 2015.
 
 Description: Ping Pong Test using PHP.
